@@ -3,6 +3,7 @@
   "displayName": "natural_language_supabase",
   "description": "Natural language comments for Supabase API calls.",
   "version": "0.0.1",
+  "publisher": "shreyaw",
   "engines": {
     "vscode": "^1.86.0"
   },
