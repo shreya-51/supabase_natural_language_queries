@@ -1,7 +1,7 @@
 {
   "name": "natural-language-supabase",
-  "displayName": "natural_language_supabase",
-  "description": "Natural language comments for Supabase API calls.",
+  "displayName": "Supabase Natural Language Queries",
+  "description": "Natural language queries for Supabase Javascript Client Library.",
   "version": "0.0.1",
   "publisher": "shreyaw",
   "engines": {

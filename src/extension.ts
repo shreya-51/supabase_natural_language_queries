@@ -23,6 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
     }));
 
     let stopCaptureCommand = vscode.commands.registerCommand('natural-language-supabase.stopCapture', async () => {
+        vscode.window.showInformationMessage('Stopped capturing input.');
         if (captureInput) {
             captureInput = false;
             const displayText = await processCapturedText(capturedText);
