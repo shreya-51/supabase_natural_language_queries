@@ -27,8 +27,8 @@ export function activate(context: vscode.ExtensionContext) {
         if (captureInput) {
             captureInput = false;
             const displayText = await processCapturedText(capturedText);
-            console.log("capturedText: ", capturedText)
-            console.log("displayText: ", displayText);
+            // console.log("capturedText: ", capturedText)
+            // console.log("displayText: ", displayText);
     
             const editor = vscode.window.activeTextEditor;
             if (editor && capturedText.length > 0) {
