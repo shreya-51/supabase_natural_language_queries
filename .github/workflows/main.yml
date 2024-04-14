@@ -3,7 +3,7 @@ name: Deploy VSCode Extension
 on:
   push:
     branches:
-      - main  # Set this to the branch from which you want to deploy
+      - main
 
 jobs:
   build:
@@ -15,10 +15,13 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # Set this to your required node.js version
+        node-version: '14'
 
     - name: Install dependencies
       run: npm install
+
+    - name: Increment version
+      run: npm version patch
 
     - name: Package Extension
       run: npx vsce package
